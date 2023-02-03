@@ -2,29 +2,29 @@ Roteiro - conceitos-html
 ========================
 
 (x) Clonar projeto-base
-() Trocar títulos
+(x) Trocar títulos
 
-() Inserir tag <header> com <h1>
-() Inserir tag <main>
+(x) Inserir tag <header> com <h1>
+(x) Inserir tag <main>
 
 () Dentro de main:
-   () Criar exemplos de <h1> até <h6>
-   () Criar exemplo de <p>
-   () Demonstrar que quebras de linha no parágrafo
+   (x) Criar exemplos de <h1> até <h6>
+   (x) Criar exemplo de <p>
+   (x) Demonstrar que quebras de linha no parágrafo
       não fazem diferença
-   () Criar exemplo de <ol> <li>
-   () Criar exemplo de <ul> <li>
-   () Criar exemplo com <table>, <caption>, <thead>,
+   (X) Criar exemplo de <ol> <li>
+   (X) Criar exemplo de <ul> <li>
+   (X) Criar exemplo com <table>, <caption>, <thead>,
       <tbody>, <tfoot>, <tr>, <th> e <td>
 
-   () Criar exemplo com <img />
-   () Envolver <img /> em <figure>
+   (X) Criar exemplo com <img />
+   (X) Envolver <img /> em <figure>
 
-   () Criar exemplo com <div> em <p>
-   () Criar exemplo com <span>'s em <p>
+   (X) Criar exemplo com <div> em <p>
+   (X) Criar exemplo com <span>'s em <p>
 
-   () Criar diversos exemplos da tag <a> 
+   (x) Criar diversos exemplos da tag <a> 
       (âncora, link interno e link externo)
 
-   () Criar exemplo com <button>
-   () Criar exemplo com <input type="text" />  
+   (x) Criar exemplo com <button>
+   (x) Criar exemplo com <input type="text" />  

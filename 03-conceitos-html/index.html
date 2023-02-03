@@ -11,8 +11,153 @@
   </head>
   <body>
     <header>
+      <a id="top-of-page"></a>
       <h1>Conceitos HTML</h1>
     </header>
+
+    <!-- Criando títulos importantes pra achar o site na 1ª pag do google -->
+    <main>
+      <h1>Texto h1</h1>
+      <h2>texto h2</h2>
+      <h3>texto h3</h3>
+      <h4>texto h4</h4>
+      <h5>texto h5</h5>
+      <h6>texto h6</h6>
+      <a id="after-h6"></a>
+
+
+      <!-- Criando parágrafo -->
+      <p>
+        Jazz é uma manifestação artístico-musical originária de comunidades de
+        Nova Orleães, nos Estados Unidos.[1] Tal manifestação teria surgido por
+        volta do final do século XIX na região de Nova Orleães, tendo origem na
+        cultura popular e na criatividade das comunidades negras que ali viviam,
+        um de seus espaços de desenvolvimento mais importantes.
+      </p>
+
+      <p>
+        O jazz se desenvolveu com a mistura de várias tradições religiosas, em
+        particular a afro-americana. Esta nova forma de se fazer música
+        incorporava blue notes, chamada e resposta, forma sincopada,
+        polirritmia, improvisação e notas com swing do ragtime. Os instrumentos
+        musicais básicos para o Jazz são aqueles usados em bandas marciais e
+        bandas de dança: metais, palhetas e baterias. No entanto, o jazz, em
+        suas várias formas, aceita praticamente todo tipo de instrumento.
+      </p>
+
+      <p>
+        As origens da palavra "jazz" são incertas. A palavra tem suas raízes na
+        gíria norte-americana e várias derivações têm sugerido tal fato. O jazz
+        não foi aplicado como música até por volta de 1915. Earl Hines, nascido
+        em 1903 e mais tarde se tornou celebrado músico de jazz, costumava dizer
+        que estava "tocando o piano antes mesmo da palavra "jazz" ser
+        inventada".
+      </p>
+
+      <!-- Criando uma lista ordenada (1.   2.) -->
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+
+      <!-- Criando uma lista não orenada (bolinha) -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <!-- Fazendo uma tabela -->
+      <table>
+        <caption>
+          Tecnologias web
+        </caption>
+        <thead></thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Descrição</th>
+        </tr>
+
+        <tbody>
+          <tr>
+            <td>Html</td>
+            <td>Hyper text markul languge</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Cascading style sheets</td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>Conhecido como ECMAScript</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Total de tecnologias</td>
+            <td>3</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- Colocando uma imagem -->
+      <figure>
+        <figcaption>Rush, a banda favorita dele.</figcaption>
+        <img width="300" src="./rush.jpg" />
+
+        <figcaption>Logo: Eduarda Rosa de Oliveira, psicologia</figcaption>
+        <img width="300" src="./imagem/Eduarda Rosa_Logotipo (1).png" />
+        <figcaption>
+          Testando sem imagem, mas pra ficar com a referência do que se fala
+        </figcaption>
+        <img src="./logo.jpg" alt="Eduarda Rosa" />
+      </figure>
+
+        <!-- Criando a tag div, que indica uma divisão, mas não tem um bom 
+        valor semântico. Então não aconselhamos usar. É BLOCANTE -->
+        <p>
+          <div>Exemplo de div 1</div>
+          <div>Exemplo de div 2</div>
+        </p>
+        
+        <!-- Criando a tag span, que indica uma divisão, mas não tem um bom 
+        valor semântico. Então não aconselhamos usar.NÃO BLOCANTE -->
+        <p>
+          <span>Exemplo de span 1</span>
+          <span>Exemplo de span 2</span>
+        </p>
+
+        <!-- Usando a tag a como âncora (linha 26)
+          para voltar ao início a página -->
+        <a href="#after-h6">Voltar ao topo da página</a>
+
+        <!-- Usando a tag a como ancora para outra pagina no mesmo site. -->
+        <a href="./conteudo.html">Ir para conteúdo</a>
+
+        <!-- Usando a tag a como ancora para outro site. -->
+        <a href="https://pt.wikipedia.org/wiki/Jazz">Ir para wiki jazz</a>
+
+        <!-- Usando a tag para abrir em nova janela, mas nao é bom
+          pra acessibilidade. -->
+        <a href="https://pt.wikipedia.org/wiki/Frank_Sinatra" target="_blank">Sinatra em outr aba</a>
+
+        <!-- Criando botão. É o java que arruma os botões -->
+        <p>
+          <button>Clique aqui</button>
+        </p>
+
+        <!-- Criando input, pro usuário digitar -->
+        <p>
+          <input type="number">
+          <input type="text">
+          <input type="time">
+        </p>
+
+    </main>
 
     <script defer src="./js/script.js"></script>
   </body>
