@@ -1,13 +1,13 @@
 Roteiro - curriculo-v2
 ======================
 
-() Clonar curriculo-v1
-() Acessar style.css
+(x) Clonar curriculo-v1
+(x) Acessar style.css
 
-() Estilizar h1 até h6 com texto centralizado
-() Estilizar button com cursor pointer
-() Estilizar table com margem automática
-() Estilizar th e td com padding
+(x) Estilizar h1 até h6 com texto centralizado
+(x) Estilizar button com cursor pointer
+(x) Estilizar table com margem automática
+(x) Estilizar th e td com padding
 
 () Estilizar tbody tr com :nth-child para alternar
    cores de fundo
