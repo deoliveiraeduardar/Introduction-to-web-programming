@@ -1,8 +1,10 @@
 body {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: lightgray;
+  background-color: lightgrey;
+  font-color 
 }
+
 h1,
 h2,
 h3,
@@ -11,8 +13,10 @@ h5,
 h6 {
   text-align: center;
 }
+
 button {
   cursor: pointer;
+  background-color: rgb(214, 196, 36);
 }
 
 table {
@@ -21,12 +25,20 @@ table {
 
 th,
 td {
-  padding: 10px;
+  padding: 6px;
   text-align: center;
 }
 
 /* Depois dos dois pontos é a pseudoclasse */
 /* tbody tr pra organizar só os tr que estão dentro do tbody */
-tbody tr:nth-child(even) {
-  background-color: rgb(15, 162, 115);
+tbody tr:nth-child(1n) {
+  background-color: #ddd;
+}
+
+tbody tr:hover {
+  font-weight: bold;
+  cursor: default;
+}
+.title {
+  color: darkred;
 }
