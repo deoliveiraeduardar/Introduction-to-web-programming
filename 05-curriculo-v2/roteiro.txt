@@ -9,13 +9,13 @@ Roteiro - curriculo-v2
 (x) Estilizar table com margem automática
 (x) Estilizar th e td com padding
 
-() Estilizar tbody tr com :nth-child para alternar
+(x) Estilizar tbody tr com :nth-child para alternar
    cores de fundo
 
-() Estilizar tbody tr com :hover 
+(x) Estilizar tbody tr com :hover 
 
-() Inserir classe .title no HTML e estilizar
+(x) Inserir classe .title no HTML e estilizar
    com fonte vermelha
 
-() Inserir classe .author e estilizar com
+(x) Inserir classe .author e estilizar com
    fonte itálica e alinhamento à direita

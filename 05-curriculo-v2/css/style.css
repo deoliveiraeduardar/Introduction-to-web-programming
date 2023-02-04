@@ -42,3 +42,8 @@ tbody tr:hover {
 .title {
   color: darkred;
 }
+
+.author {
+  text-align: right;
+  font-style: italic;
+}
