@@ -44,8 +44,11 @@ function renderBoard() {
   var divBoard = document.querySelector('#megasena-board');
   divBoard.innerHTML = '';
 
-  var div;
-}
+  var ulNumbers = document.createElement('ul');
+  for (var i = 0; i < state.board.length; i++) {
+    var currentNumber = state.board[i]
+
+    var liNumber = document.createElement('li')
 
 function addNumberToGame(numberToAdd) {
   if (numberToAdd < 1 || numberToAdd > 60) {
@@ -114,5 +117,4 @@ function resetGame() {
   return (state.currentGame = []);
 }
 
-start();
-/* OUTRO PROBLEMA NO START */
+start()
