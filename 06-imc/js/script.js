@@ -1,8 +1,10 @@
 function start() {
   console.log('start');
+  console.log(calculateImc);
 }
-start();
 
 function calculateImc(weight, height) {
   return weight / (height * height);
 }
+
+start();
