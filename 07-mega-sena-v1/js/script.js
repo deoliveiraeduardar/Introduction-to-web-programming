@@ -1,1 +1,26 @@
 var state = { board: [], currentGame: [], savadGames: [] };
+
+function start() {
+  addNumberToGame(1);
+  addNumberToGame(2);
+  addNumberToGame(3);
+  addNumberToGame(4);
+  addNumberToGame(60);
+  addNumberToGame(55);
+
+  console.log(state.currentGame);
+}
+
+function addNumberToGame(numberToAdd) {
+  if (numberToAdd < 1 || numberToAdd > 60) {
+    console.error('Número inválido', numberToAdd);
+    return;
+  }
+
+  if (state.currentGame.length >= 6) {
+    console.error('O jogo já está completo.');
+  }
+
+  state.currentGame.push(numberToAdd);
+}
+start();
