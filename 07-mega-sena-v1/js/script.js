@@ -13,6 +13,9 @@ function start() {
 
   console.log(state.currentGame);
   console.log(state.savedGames);
+
+  resetGame();
+  console.log(state.currentGame);
 }
 
 function addNumberToGame(numberToAdd) {
@@ -76,6 +79,10 @@ function saveGame() {
 
 function isGameComplete() {
   return state.currentGame.length === 6;
+}
+
+function resetGame() {
+  return (state.currentGame = []);
 }
 
 start();
