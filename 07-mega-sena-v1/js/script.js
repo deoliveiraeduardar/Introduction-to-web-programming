@@ -31,15 +31,16 @@ function addNumberToGame(numberToAdd) {
   state.currentGame.push(numberToAdd);
 }
 
-function removeNumberFromGame(numerToRemove) {
+function removeNumberFromGame(numberToRemove) {
   var newGame = [];
+
   for (var i = 0; i < state.currentGame.length; i++) {
-    var currentNumber = statecurrentGame[i];
+    var currentNumber = state.currentGame[i];
 
     if (currentNumber === numberToRemove) {
       continue;
     }
-    newGame.concat.push(currentNumber);
+    newGame.push(currentNumber);
   }
   state.currentGame = newGame;
 }
