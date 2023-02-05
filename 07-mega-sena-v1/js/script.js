@@ -1,4 +1,4 @@
-var state = { board: [], currentGame: [], savadGames: [] };
+var state = { board: [], currentGame: [], savedGames: [] };
 
 function start() {
   addNumberToGame(1);
@@ -8,12 +8,12 @@ function start() {
   addNumberToGame(5);
   saveGame();
   addNumberToGame(6);
+
+  saveGame();
   saveGame();
 
   /* PROBLEMA É AQUI */
   /* OUTRO PROBLEMA AQUI NO SAVE GAME */
-
-  saveGame();
 
   console.log(state.currentGame);
   console.log(state.savedGames);
@@ -67,7 +67,7 @@ function isNumberInGame(numberToCheck) {
 }
 
 function saveGame() {
-  if (!isGameComplete()) {
+  if (isGameComplete()) {
     /* PROBLEMA É AQUI COM O ! E SEM ELE*/
     /* PROBLEMA É AQUI, O JOGO NAO ESTA COMPLETO */
     console.error('O jogo não está completo!');

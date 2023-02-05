@@ -1,4 +1,4 @@
-var state = { currentGame: [], savedGames: [], board: [] };
+var state = { currentGame: [], savedGames: [savedGames], board: [] };
 
 function start() {
   createBoard();
