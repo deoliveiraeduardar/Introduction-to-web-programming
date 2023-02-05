@@ -1,1 +1,8 @@
-console.log('Teste no console do JavaScript');
+function start() {
+  console.log('start');
+}
+start();
+
+function calculateImc(weight, height) {
+  return weight / (height * height);
+}
