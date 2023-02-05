@@ -2,9 +2,9 @@ var state = { board: [], currentGame: [], savadGames: [] };
 
 function start() {
   addNumberToGame(1);
-  addNumberToGame(2);
-  addNumberToGame(3);
-  addNumberToGame(4);
+  addNumberToGame(5);
+  addNumberToGame(5);
+  addNumberToGame(5);
   addNumberToGame(60);
   addNumberToGame(59);
   addNumberToGame(55);
@@ -21,9 +21,21 @@ function addNumberToGame(numberToAdd) {
     return;
   }
 
+  if (isNumberInGame(numberToAdd)) {
+    console.error('Este número já está no jogo.', numberToAdd);
+    return;
+  }
+
   if (state.currentGame.length >= 6) {
     console.error('O jogo já está completo.');
     return;
+  }
+
+  function isNumberInGame(numberToCheck) {
+    if (state.currentGame.includes(numberToCheck)) {
+      return true;
+    }
+    return false;
   }
 
   state.currentGame.push(numberToAdd);
