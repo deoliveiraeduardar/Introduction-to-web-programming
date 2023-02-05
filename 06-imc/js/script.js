@@ -9,7 +9,14 @@ function calculateImc(weight, height) {
 }
 
 function handleButtonClick() {
-  console.log('cliquei');
+  var inputWeight = document.querySelector('#input-weight');
+  var inputHeight = document.querySelector('#input-height');
+
+  var weight = Number(inputWeight.value);
+  var height = Number(inputHeight.value);
+
+  console.log(weight);
+  console.log(height);
 }
 
 start();
