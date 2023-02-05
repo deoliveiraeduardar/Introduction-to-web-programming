@@ -10,7 +10,6 @@ function start() {
   addNumberToGame(6);
 
   saveGame();
-  saveGame();
 
   console.log(state.currentGame);
   console.log(state.savedGames);
