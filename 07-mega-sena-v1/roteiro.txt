@@ -11,7 +11,7 @@ JavaScript:
 (x) Criar estado da aplicação com objeto { board: [], currentGame: [], savedGames: [] }
 (x) Criar e invocar função start
 
-() Focar na implementação dos dados e só depois
+(x) Focar na implementação dos dados e só depois
    na implementação da interface
 
 () Criar função createBoard e utilizar em start
