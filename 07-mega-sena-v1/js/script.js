@@ -1,6 +1,9 @@
 var state = { board: [], currentGame: [], savedGames: [] };
 
 function start() {
+  createBoard();
+  newGame();
+
   addNumberToGame(1);
   addNumberToGame(2);
   addNumberToGame(3);
@@ -16,7 +19,28 @@ function start() {
 
   resetGame();
   console.log(state.currentGame);
+
+  console.log(state.board);
 }
+
+function createBoard() {
+  state.board = [];
+
+  for (var i = 1; i <= 60; i++) {
+    state.board.push(i);
+  }
+}
+
+function newGame() {
+  resetGame();
+  render();
+}
+
+function render() {
+  renderBoard();
+}
+
+function renderBoard() {}
 
 function addNumberToGame(numberToAdd) {
   if (numberToAdd < 1 || numberToAdd > 60) {
