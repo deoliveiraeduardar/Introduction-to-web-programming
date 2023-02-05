@@ -3,6 +3,12 @@ function start() {
   console.log(buttonCalculateImc);
   buttonCalculateImc.addEventListener('click', handleButtonClick);
 
+  var inputWeight = document.querySelector('#input-weight');
+  var inputHeight = document.querySelector('#input-height');
+
+  inputWeight.addEventListener('input', handleButtonClick);
+  inputHeight.addEventListener('input', handleButtonClick);
+
   handleButtonClick();
 }
 
