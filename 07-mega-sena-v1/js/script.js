@@ -2,15 +2,12 @@ var state = { board: [], currentGame: [], savadGames: [] };
 
 function start() {
   addNumberToGame(1);
+  addNumberToGame(2);
+  addNumberToGame(3);
+  addNumberToGame(4);
   addNumberToGame(5);
   addNumberToGame(5);
-  addNumberToGame(5);
-  addNumberToGame(60);
-  addNumberToGame(59);
-  addNumberToGame(55);
-  addNumberToGame(60);
-  addNumberToGame(55);
-  addNumberToGame(55);
+  removeNumberFromGame(5);
 
   console.log(state.currentGame);
 }
@@ -21,24 +18,38 @@ function addNumberToGame(numberToAdd) {
     return;
   }
 
-  if (isNumberInGame(numberToAdd)) {
-    console.error('Este número já está no jogo.', numberToAdd);
-    return;
-  }
-
   if (state.currentGame.length >= 6) {
     console.error('O jogo já está completo.');
     return;
   }
 
-  function isNumberInGame(numberToCheck) {
-    //if (state.currentGame.includes(numberToCheck)) {
-    //  return true;
-    //}
-    //return false;
-    return state.currentGame.includes(numberToCheck);
+  if (isNumberInGame(numberToAdd)) {
+    console.error('Este número já está no jogo.', numberToAdd);
+    return;
   }
 
   state.currentGame.push(numberToAdd);
 }
+
+function removeNumberFromGame(numerToRemove) {
+  var newGame = [];
+  for (var i = 0; i < state.currentGame.length; i++) {
+    var currentNumber = statecurrentGame[i];
+
+    if (currentNumber === numberToRemove) {
+      continue;
+    }
+    newGame.concat.push(currentNumber);
+  }
+  state.currentGame = newGame;
+}
+
+function isNumberInGame(numberToCheck) {
+  //if (state.currentGame.includes(numberToCheck)) {
+  //  return true;
+  //}
+  //return false;
+  return state.currentGame.includes(numberToCheck);
+}
+
 start();
