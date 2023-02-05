@@ -4,7 +4,7 @@ Roteiro - imc
 (X) Clonar projeto-base
 
 HTML: 
-() Montar HTML com 2 inputs do tipo texto e 1 botão
+(X) Montar HTML com 2 inputs do tipo texto e 1 botão
 () Utilizar id's nos inputs e botão
 () Inserir div para conter o resultado do cálculo
 
