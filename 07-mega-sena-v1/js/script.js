@@ -32,10 +32,11 @@ function addNumberToGame(numberToAdd) {
   }
 
   function isNumberInGame(numberToCheck) {
-    if (state.currentGame.includes(numberToCheck)) {
-      return true;
-    }
-    return false;
+    //if (state.currentGame.includes(numberToCheck)) {
+    //  return true;
+    //}
+    //return false;
+    return state.currentGame.includes(numberToCheck);
   }
 
   state.currentGame.push(numberToAdd);
