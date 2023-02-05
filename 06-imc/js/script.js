@@ -17,6 +17,9 @@ function handleButtonClick() {
 
   console.log(weight);
   console.log(height);
+
+  var imc = calculateImc(weight, height);
+  console.log(imc);
 }
 
 start();
