@@ -6,10 +6,17 @@ function start() {
   addNumberToGame(3);
   addNumberToGame(4);
   addNumberToGame(5);
-  addNumberToGame(5);
-  removeNumberFromGame(5);
+  saveGame();
+  addNumberToGame(6);
+  saveGame();
+
+  /* PROBLEMA É AQUI */
+  /* OUTRO PROBLEMA AQUI NO SAVE GAME */
+
+  saveGame();
 
   console.log(state.currentGame);
+  console.log(state.savedGames);
 }
 
 function addNumberToGame(numberToAdd) {
@@ -32,6 +39,11 @@ function addNumberToGame(numberToAdd) {
 }
 
 function removeNumberFromGame(numberToRemove) {
+  if (numberToRemove < 1 || numberToRemove > 60) {
+    console.error('Número inválido', numberToRemove);
+    return;
+  }
+
   var newGame = [];
 
   for (var i = 0; i < state.currentGame.length; i++) {
@@ -40,6 +52,7 @@ function removeNumberFromGame(numberToRemove) {
     if (currentNumber === numberToRemove) {
       continue;
     }
+
     newGame.push(currentNumber);
   }
   state.currentGame = newGame;
@@ -53,4 +66,21 @@ function isNumberInGame(numberToCheck) {
   return state.currentGame.includes(numberToCheck);
 }
 
+function saveGame() {
+  if (!isGameComplete()) {
+    /* PROBLEMA É AQUI COM O ! E SEM ELE*/
+    /* PROBLEMA É AQUI, O JOGO NAO ESTA COMPLETO */
+    console.error('O jogo não está completo!');
+    return;
+  }
+
+  state.savedGames.push(state.currentGame);
+  /* PROBLEMA É AQUI, NO PUSH */
+}
+
+function isGameComplete() {
+  return state.currentGame.length === 6;
+}
+
 start();
+/* OUTRO PROBLEMA NO START */
