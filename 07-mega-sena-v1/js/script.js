@@ -12,9 +12,6 @@ function start() {
   saveGame();
   saveGame();
 
-  /* PROBLEMA É AQUI */
-  /* OUTRO PROBLEMA AQUI NO SAVE GAME */
-
   console.log(state.currentGame);
   console.log(state.savedGames);
 }
