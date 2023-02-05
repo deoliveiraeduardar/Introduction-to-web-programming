@@ -6,6 +6,10 @@ function start() {
   addNumberToGame(3);
   addNumberToGame(4);
   addNumberToGame(60);
+  addNumberToGame(59);
+  addNumberToGame(55);
+  addNumberToGame(60);
+  addNumberToGame(55);
   addNumberToGame(55);
 
   console.log(state.currentGame);
@@ -19,6 +23,7 @@ function addNumberToGame(numberToAdd) {
 
   if (state.currentGame.length >= 6) {
     console.error('O jogo já está completo.');
+    return;
   }
 
   state.currentGame.push(numberToAdd);
