@@ -40,7 +40,12 @@ function render() {
   renderBoard();
 }
 
-function renderBoard() {}
+function renderBoard() {
+  var divBoard = document.querySelector('#megasena-board');
+  divBoard.innerHTML = '';
+
+  var div;
+}
 
 function addNumberToGame(numberToAdd) {
   if (numberToAdd < 1 || numberToAdd > 60) {
