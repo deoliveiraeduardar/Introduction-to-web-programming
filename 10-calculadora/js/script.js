@@ -12,19 +12,17 @@ function start() {
   handleButtonClick();
 }
 
-var numeroA = Number(inputNumeroA.value);
-var numeroB = Number(inputNumeroB.value);
-
 function somaAB(numeroA, numeroB) {
   return numeroA + numeroB;
 }
 
 function handleButtonClick() {
-  var inputNumeroA = document.querySelector('#input-numero-A');
-  var inputNumeroB = document.querySelector('#input-numero-B');
+  var inputnumeroA = document.querySelector('#input-numero-A');
+  var inputnumeroB = document.querySelector('#input-numero-B');
 
   var somaAB = document.querySelector('#somaAB');
-
+  var numeroA = Number(inputnumeroA.value);
+  var numeroB = Number(inputnumeroB.value);
   console.log(numeroA);
   console.log(numeroB);
 }
