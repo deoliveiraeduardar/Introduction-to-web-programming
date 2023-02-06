@@ -6,6 +6,7 @@ body {
 
 .title {
   color: rgb(223, 167, 11);
+  text-align: center;
 }
 
 p {
@@ -29,4 +30,28 @@ button {
   cursor: pointer;
   background-color: rgb(223, 167, 11);
   border-color: aliceblue;
+  margin-top: 5px;
+}
+
+table {
+  margin-left: 132px;
+  color: aliceblue;
+  height: 50px;
+
+  margin-block-end: 50x;
+}
+
+th {
+  color: aliceblue;
+  width: 500px;
+}
+
+td {
+  color: aliceblue;
+}
+
+/* Depois dos dois pontos é a pseudoclasse */
+/* tbody tr pra organizar só os tr que estão dentro do tbody */
+tbody tr:nth-child(1n) {
+  background-color: rgb(217, 31, 31);
 }

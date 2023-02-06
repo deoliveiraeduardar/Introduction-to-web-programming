@@ -1,37 +1,33 @@
+var board = [];
 function start() {
-  var buttonCalculateImc = document.querySelector('#button-calculate-imc');
-  console.log(buttonCalculateImc);
-  buttonCalculateImc.addEventListener('click', handleButtonClick);
+  createBoard();
 
-  var inputWeight = document.querySelector('#input-weight');
-  var inputHeight = document.querySelector('#input-height');
+  var botaoCalcular = document.querySelector('#botao-calcular');
+  console.log(botaoCalcular);
+  botaoCalcular;
+  botaoCalcular.addEventListener('click', handleButtonClick);
 
-  inputWeight.addEventListener('input', handleButtonClick);
-  inputHeight.addEventListener('input', handleButtonClick);
+  var inputNumeroA = document.querySelector('#input-numero-A');
+  var inputNumeroB = document.querySelector('#input-numero-B');
+
+  inputNumeroA.addEventListener('input', handleButtonClick);
+  inputNumeroB.addEventListener('input', handleButtonClick);
 
   handleButtonClick();
 }
 
-function calculateImc(weight, height) {
-  return weight / (height * height);
+function createBoard() {
+  for (var i=0;)
 }
 
-function handleButtonClick() {
-  var inputWeight = document.querySelector('#input-weight');
-  var inputHeight = document.querySelector('#input-height');
-
-  var imcResult = document.querySelector('#imc-result');
-
-  var weight = Number(inputWeight.value);
-  var height = Number(inputHeight.value);
-
-  console.log(weight);
-  console.log(height);
-
-  var imc = calculateImc(weight, height);
-  var formattedImc = imc.toFixed(2).replace('.', ',');
-
-  imcResult.textContent = formattedImc;
+/* GERANDO UMA FUNÇÃO PARA CALCUALAR SÓ POSIIVOS */
+function NumerosNegativos(inputNumeroA, inputNumeroB) {
+  if (inputNumeroA < 1 || inputNumeroB < 1) {
+    console.error(
+      'Número inválido, pois é negativo. Digite um número inteiro positivo.'
+    );
+    return;
+  }
 }
 
 start();

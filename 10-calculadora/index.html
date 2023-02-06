@@ -13,23 +13,123 @@
     <header><h1 class="title">Super calculadora</h1></header>
 
     <p>
-      <label for="input-weight">Informe o peso (kg):</label>
-      <input id="input-weight" type="number" value="98" step="0.1" />
-      <br />
+      <label for="input-numero-A">Primeiro número (A):</label>
+      <input id="input-numero-A" type="number" value="98" step="0.1" />
     </p>
 
     <p>
-      <label for="input-height">Informe a altura (m):</label>
-      <input id="input-height" type="number" value="1.78" step="0.01" />
+      <label for="input-numero-B">Segundo número (B):</label>
+      <input id="input-numero-B" type="number" value="1.78" step="0.01" /><br />
     </p>
 
     <p>
-      <button id="button-calculate-imc">Calcular IMC</button>
+      <button id="botao-calcular">Calcular</button>
+    <p/>
+
+    <p>
+      <button id="botao-novo-calculo">Fazer outro cálculo</button></p> 
     </p>
 
-    <p id="paragraph-result">
-      O IMC desses dados é <strong id="imc-result"></strong>
-    </p>
+
+
+    <!-- CRIANDO TABELA 1 (SOMA A SUBTRAÇÃO) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Soma</th>
+          <th>Subtração A-B</th>
+          <th>Subtração B-A</th>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A+B</td>
+          <td>A-B</td>
+          <td>B-A</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- CRIANDO TABELA 2 (SOMA A SUBTRAÇÃO) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Multiplicação</th>
+          <th>Divisão A/B</th>
+          <th>Divisão B-A</th>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A*B</td>
+          <td>A-B</td>
+          <td>B-A</td>
+        </tr>
+      </tbody>
+    </table>
+
+        <!-- CRIANDO TABELA 3 (SOMA A SUBTRAÇÃO) -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Potência A na base B</th>
+              <th>Potência B na base A</th>
+              <th>Raiz quadrada de A</th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AelevadoB</td>
+              <td>BelevadoA</td>
+              <td>raizA</td>
+            </tr>
+          </tbody>
+        </table>
+
+        
+        <!-- CRIANDO TABELA 4 (SOMA A SUBTRAÇÃO) -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Raiz quadrada de B</th>
+              <th>Fatorial de A</th>
+              <th>Fatorial de B</th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RaizB</td>
+              <td>FatorialA</td>
+              <td>FatorialB</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- CRIANDO TABELA 5 (SOMA A SUBTRAÇÃO) -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Porcentagem de A em relação a B</th>
+              <th>Porcentagem de B em relação a A</th>
+              <th>Média</th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>porcenAB</td>
+              <td>porcenBA</td>
+              <td>Média</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+    <p id="paragraph-result">O resultado é <strong id="imc-result"></strong></p>
 
     <script defer src="./js/script.js"></script>
   </body>
