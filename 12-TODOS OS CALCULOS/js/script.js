@@ -52,16 +52,32 @@ function calculoRaizB(numeroB) {
   return Math.sqrt(numeroB);
 }
 
-function calculoMedia(numeroA, numeroB) {
-  return (numeroA + numeroB) / 2;
-}
-
 function calculoFatorialA(numeroA) {
   if (numeroA < 0) return -1;
   else if (numeroA == 0) return 1;
   else {
     return numeroA * calculoFatorialA(numeroA - 1);
   }
+}
+
+function calculoFatorialB(numeroB) {
+  if (numeroB < 0) return -1;
+  else if (numeroB == 0) return 1;
+  else {
+    return numeroB * calculoFatorialA(numeroB - 1);
+  }
+}
+
+function calculoMedia(numeroA, numeroB) {
+  return (numeroA + numeroB) / 2;
+}
+
+function calculoPorAB(numeroA, numeroB) {
+  return (numeroA * numeroB) / 100;
+}
+
+function calculoPorBA(numeroA, numeroB) {
+  return (numeroB * numeroA) / 100;
 }
 
 function handleButtonClick() {
@@ -75,6 +91,27 @@ function handleButtonClick() {
   console.log(numeroB);
 
   /* ... */
+
+  calculoPorBA;
+  var ResultadoPorAB = document.querySelector('#resultado-por-AB');
+  var PorAB = calculoPorAB(numeroA, numeroB);
+  var formattePorAB = PorAB.toFixed(2).replace('.', ',');
+  console.log(PorAB);
+  ResultadoPorAB.textContent = formattePorAB;
+
+  calculoPorBA;
+  var ResultadoPorBA = document.querySelector('#resultado-por-BA');
+  var PorBA = calculoPorBA(numeroA, numeroB);
+  var formattePorBA = PorBA.toFixed(2).replace('.', ',');
+  console.log(PorBA);
+  ResultadoPorBA.textContent = formattePorBA;
+
+  /*resultado-FATORIAL-A*/
+  var ResultadoFatorialB = document.querySelector('#resultado-fat-B');
+  var FatorialB = calculoFatorialB(numeroA);
+  var formatteFatorialB = FatorialB.toFixed(2).replace('.', ',');
+  console.log(FatorialB);
+  ResultadoFatorialB.textContent = formatteFatorialB;
 
   /*resultado-FATORIAL-A*/
   var ResultadoFatorialA = document.querySelector('#resultado-fat-A');
