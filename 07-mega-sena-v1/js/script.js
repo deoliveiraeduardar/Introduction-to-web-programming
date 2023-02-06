@@ -4,16 +4,6 @@ function start() {
   createBoard();
   newGame();
 
-  addNumberToGame(1);
-  addNumberToGame(2);
-  addNumberToGame(3);
-  addNumberToGame(4);
-  addNumberToGame(5);
-  saveGame();
-  addNumberToGame(6);
-
-  saveGame();
-
   console.log(state.currentGame);
   console.log(state.savedGames);
 
