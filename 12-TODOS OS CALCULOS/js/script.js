@@ -44,6 +44,14 @@ function calculoPotBA(numeroA, numeroB) {
   return Math.pow(numeroB, numeroA);
 }
 
+function calculoRaizA(numeroA) {
+  return Math.sqrt(numeroA);
+}
+
+function calculoRaizB(numeroB) {
+  return Math.sqrt(numeroB);
+}
+
 function handleButtonClick() {
   var inputnumeroA = document.querySelector('#input-numero-A');
   var inputnumeroB = document.querySelector('#input-numero-B');
@@ -54,14 +62,35 @@ function handleButtonClick() {
   console.log(numeroA);
   console.log(numeroB);
 
-  calculoPotAB;
+  calculoRaizA;
   /* ... */
-  /*resultado-muti  */
-  var ResultadoDiviAB = document.querySelector('#resultado-div-AB');
-  var diviAB = calculoDiviAB(numeroA, numeroB);
-  var formattediviAB = diviAB.toFixed(2).replace('.', ',');
-  console.log(diviAB);
-  ResultadoDiviAB.textContent = formattediviAB;
+  /*resultado-RAIZ-B  */
+  var ResultadoRaizB = document.querySelector('#resultado-raiz-B');
+  var RaizB = calculoRaizB(numeroB);
+  var formatteRaizB = RaizB.toFixed(2).replace('.', ',');
+  console.log(RaizB);
+  ResultadoRaizB.textContent = formatteRaizB;
+
+  /*resultado-RAIZ-A  */
+  var ResultadoRaizA = document.querySelector('#resultado-raiz-A');
+  var RaizA = calculoRaizA(numeroA);
+  var formatteRaizA = RaizA.toFixed(2).replace('.', ',');
+  console.log(RaizA);
+  ResultadoRaizA.textContent = formatteRaizA;
+
+  /*resultado-POT-BA  */
+  var ResultadoPotBA = document.querySelector('#resultado-pot-BA');
+  var PotBA = calculoPotBA(numeroA, numeroB);
+  var formattePotBA = PotBA.toFixed(2).replace('.', ',');
+  console.log(PotBA);
+  ResultadoPotBA.textContent = formattePotBA;
+
+  /*resultado-POT-AB  */
+  var ResultadoPotAB = document.querySelector('#resultado-pot-AB');
+  var diviPotAB = calculoPotAB(numeroA, numeroB);
+  var formattePotAB = diviPotAB.toFixed(2).replace('.', ',');
+  console.log(diviPotAB);
+  ResultadoPotAB.textContent = formattePotAB;
 
   /*resultado-divi-AB  */
   var ResultadoDiviAB = document.querySelector('#resultado-div-AB');
