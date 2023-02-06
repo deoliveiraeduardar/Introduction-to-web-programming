@@ -73,11 +73,11 @@ function calculoMedia(numeroA, numeroB) {
 }
 
 function calculoPorAB(numeroA, numeroB) {
-  return (numeroA * numeroB) / 100;
+  return (numeroB * 100) / numeroA;
 }
 
 function calculoPorBA(numeroA, numeroB) {
-  return (numeroB * numeroA) / 100;
+  return (numeroA * 100) / numeroB;
 }
 
 function handleButtonClick() {
