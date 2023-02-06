@@ -1,7 +1,7 @@
 function start() {
-  var botaoCalcular = document.querySelector('#botao-calcular');
-  console.log(botaoCalcular);
-  botaoCalcular.addEventListener('click', handleButtonClick);
+  var buttonCalcular = document.querySelector('#button-calcular');
+  console.log(buttonCalcular);
+  buttonCalcular.addEventListener('click', handleButtonClick);
 
   var inputnumeroA = document.querySelector('#input-numero-A');
   var inputnumeroB = document.querySelector('#input-numero-B');
@@ -29,6 +29,7 @@ function handleButtonClick() {
   console.log(numeroB);
 
   var somaAB = calculoSomaAB(numeroA, numeroB);
+  console.log(somaAB);
 }
 
 start();
