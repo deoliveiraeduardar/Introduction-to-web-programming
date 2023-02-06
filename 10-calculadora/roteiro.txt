@@ -10,7 +10,7 @@ Roteiro - calculadora
 () COLOCAR UM ATALHO NO HTML PARA QUE ALI MOSTRE O CÁLCULO
 
 ()CRIAR CÁLCULO
-  () Soma
+  (x) Soma
   () Subtração A-B
   () Subtração B-A
   () Multiplicação
