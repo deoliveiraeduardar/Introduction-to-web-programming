@@ -29,7 +29,11 @@ function handleButtonClick() {
   console.log(numeroB);
 
   var somaAB = calculoSomaAB(numeroA, numeroB);
+  var formattedsomaAB = somaAB.toFixed(2).replace('.', ',');
+
   console.log(somaAB);
+
+  ResultadoSomaAB.textContent = formattedsomaAB;
 }
 
 start();
