@@ -1,7 +1,7 @@
 function start() {
-  var botaoCalcular = document.querySelector('#botao-calcular');
-  console.log(botaoCalcular);
-  botaoCalcular.addEventListener('click', handleButtonClick);
+  var buttonCalcular = document.querySelector('#button-calcular');
+  console.log(buttonCalcular);
+  buttonCalcular.addEventListener('click', handleButtonClick);
 
   var inputnumeroA = document.querySelector('#input-numero-A');
   var inputnumeroB = document.querySelector('#input-numero-B');
@@ -29,16 +29,11 @@ function handleButtonClick() {
   console.log(numeroB);
 
   var somaAB = calculoSomaAB(numeroA, numeroB);
-}
+  var formattedsomaAB = somaAB.toFixed(2).replace('.', ',');
 
-/* GERANDO UMA FUNÇÃO PARA CALCUALAR SÓ POSIIVOS */
-/* function NumerosNegativos(inputNumeroA, inputNumeroB) {
-  if (inputNumeroA < 1 || inputNumeroB < 1) {
-    console.error(
-      'Número inválido, pois é negativo. Digite um número inteiro positivo.'
-    );
-    return;
-  }
-}*/
+  console.log(somaAB);
+
+  ResultadoSomaAB.textContent = formattedsomaAB;
+}
 
 start();
