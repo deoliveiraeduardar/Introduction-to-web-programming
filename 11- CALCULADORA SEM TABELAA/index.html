@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Super calculadora</title>
+  </head>
+  <body>
+    <header><h1 class="title">Super calculadora</h1></header>
+
+    <p>
+      <label for="input-numero-A">Primeiro número (A):</label>
+      <input id="input-numero-A" type="number" value="98" step="0.1" />
+    </p>
+
+    <p>
+      <label for="input-numero-B">Segundo número (B):</label>
+      <input id="input-numero-B" type="number" value="1.78" step="0.01" /><br />
+    </p>
+
+    <p>
+      <button id="botao-calcular">Calcular</button>
+    <p/>
+
+    <p>
+      <button id="botao-novo-calculo">Fazer outro cálculo</button></p> 
+    </p>
+
+
+    <p id ="paragrafo-resultado-soma">SOMA <strong id="resultado-soma-AB"></strong> </p>
+
+    <p id="paragraph-result">O resultado é <strong id="imc-result"></strong></p>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
