@@ -36,7 +36,7 @@ button {
 table {
   margin-left: 132px;
   color: aliceblue;
-  height: 50px;
+  height: 80px;
 
   margin-block-end: 50x;
 }
@@ -48,6 +48,7 @@ th {
 
 td {
   color: aliceblue;
+  text-align: center;
 }
 
 /* Depois dos dois pontos é a pseudoclasse */
