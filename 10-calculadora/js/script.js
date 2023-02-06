@@ -12,7 +12,7 @@ function start() {
   handleButtonClick();
 }
 
-function somaAB(numeroA, numeroB) {
+function calculoSomaAB(numeroA, numeroB) {
   return numeroA + numeroB;
 }
 
@@ -20,7 +20,8 @@ function handleButtonClick() {
   var inputnumeroA = document.querySelector('#input-numero-A');
   var inputnumeroB = document.querySelector('#input-numero-B');
 
-  var somaAB = document.querySelector('#somaAB');
+  var ResultadoSomaAB = document.querySelector('#resultado-soma-AB');
+
   var numeroA = Number(inputnumeroA.value);
   var numeroB = Number(inputnumeroB.value);
   console.log(numeroA);
