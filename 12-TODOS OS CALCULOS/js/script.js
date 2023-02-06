@@ -28,6 +28,14 @@ function calculoMulti(numeroA, numeroB) {
   return numeroB * numeroA;
 }
 
+function calculoDiviAB(numeroA, numeroB) {
+  return numeroA / numeroB;
+}
+
+function calculoDiviBA(numeroA, numeroB) {
+  return numeroB / numeroA;
+}
+
 function handleButtonClick() {
   var inputnumeroA = document.querySelector('#input-numero-A');
   var inputnumeroB = document.querySelector('#input-numero-B');
@@ -39,6 +47,21 @@ function handleButtonClick() {
   console.log(numeroB);
 
   /* ... */
+
+  /*resultado-muti  */
+  var ResultadoDiviAB = document.querySelector('#resultado-div-AB');
+  var diviAB = calculoDiviAB(numeroA, numeroB);
+  var formattediviAB = diviAB.toFixed(2).replace('.', ',');
+  console.log(diviAB);
+  ResultadoDiviAB.textContent = formattediviAB;
+
+  /*resultado-muti  */
+  var ResultadoDiviBA = document.querySelector('#resultado-div-BA');
+  var diviBA = calculoDiviBA(numeroA, numeroB);
+  var formattediviBA = diviBA.toFixed(2).replace('.', ',');
+  console.log(diviBA);
+  ResultadoDiviBA.textContent = formattediviBA;
+
   /*resultado-muti  */
   var ResultadoMulti = document.querySelector('#resultado-multi');
   var multi = calculoMulti(numeroA, numeroB);
