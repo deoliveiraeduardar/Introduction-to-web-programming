@@ -7,10 +7,10 @@
 
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Super calculadora</title>
+    <title>CALCULADORA COM TABELA</title>
   </head>
   <body>
-    <header><h1 class="title">Super calculadora</h1></header>
+    <header><h1 class="title">CALCULADORA COM TABELA</h1></header>
 
     <p>
       <label for="input-numero-A">Primeiro número (A):</label>
@@ -26,13 +26,105 @@
       <button id="button-calcular">Calcular</button>
     <p/>
 
-    <p>
-      <button id="button-novo-calculo">Fazer outro cálculo</button></p> 
-    </p>
+
+    <!-- CRIANDO TABELA 1 (SOMA A SUBTRAÇÃO) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Soma</th>
+          <th>Subtração A-B</th>
+          <th>Subtração B-A</th>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <strong id="resultado-soma-AB"></strong> </td>
+          <td> <strong id="resultado-sub-AB"></strong> </td>
+          <td><strong id="resultado-sub-BA"></strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- CRIANDO TABELA 2 (SOMA A SUBTRAÇÃO) -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Multiplicação</th>
+          <th>Divisão A/B</th>
+          <th>Divisão B-A</th>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong id="resultado-multi"></strong> </td>
+          <td><strong id="resultado-div-AB"></strong></td>
+          <td><strong id="resultado-div-BA"></strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+        <!-- CRIANDO TABELA 3 (SOMA A SUBTRAÇÃO) -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Potência A na base B</th>
+              <th>Potência B na base A</th>
+              <th>Raiz quadrada de A</th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong id="resultado-pot-AB"></strong></td>
+              <td><strong id="resultado-pot-BA"></strong></td>
+              <td><strong id="resultado-raiz-A"></strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        
+        <!-- CRIANDO TABELA 4 (SOMA A SUBTRAÇÃO) -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Raiz quadrada de B</th>
+              <th>Fatorial de A</th>
+              <th>Fatorial de B</th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong id="resultado-raiz-B"></td>
+              <td><strong id="resultado-fat-A"></strong></td>
+              <td><strong id="resultado-fat-B"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- CRIANDO TABELA 5 (SOMA A SUBTRAÇÃO) -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Porcentagem de A em relação a B</th>
+              <th>Porcentagem de B em relação a A</th>
+              <th>Média</th>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>porcenAB</td>
+              <td>porcenBA</td>
+              <td>Média</td>
+            </tr>
+          </tbody>
+        </table>
 
 
-    <p id ="paragrafo-resultado-soma">SOMA <strong id="resultado-soma-AB"></strong> </p>
-
+    <p id="paragraph-result">O resultado é <strong id="resultado-soma-AB"></strong> ></p>
 
     <script defer src="./js/script.js"></script>
   </body>
