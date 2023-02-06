@@ -31,14 +31,4 @@ function handleButtonClick() {
   var somaAB = calculoSomaAB(numeroA, numeroB);
 }
 
-/* GERANDO UMA FUNÇÃO PARA CALCUALAR SÓ POSIIVOS */
-/* function NumerosNegativos(inputNumeroA, inputNumeroB) {
-  if (inputNumeroA < 1 || inputNumeroB < 1) {
-    console.error(
-      'Número inválido, pois é negativo. Digite um número inteiro positivo.'
-    );
-    return;
-  }
-}*/
-
 start();
