@@ -1,0 +1,29 @@
+Roteiro - calculadora
+======================
+
+
+(X) CRIAR TABELA
+(X) CRIAR DESIGN
+  (X) Deixar tudo com o mesmo tamanho
+  (X) Deixar tudo centralizado
+
+() COLOCAR UM ATALHO NO HTML PARA QUE ALI MOSTRE O CÁLCULO
+
+()CRIAR CÁLCULO
+  (x) Soma
+  () Subtração A-B
+  () Subtração B-A
+  () Multiplicação
+  () Divisão A/B
+  () Divisão B/A
+  () Potência de A na base B
+  () Potência de B na base A
+  () Raiz quadrada de A
+  () Raiz quadrada de B
+  () Fatorial de A
+  () Fatorial de B
+  () Porcentagem de A em relação a B
+  () Porcentagem de B em relação a A
+  () Média
+
+
