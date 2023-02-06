@@ -106,9 +106,9 @@ function handleButtonClick() {
   console.log(PorBA);
   ResultadoPorBA.textContent = formattePorBA;
 
-  /*resultado-FATORIAL-A*/
+  /*resultado-FATORIAL-B*/
   var ResultadoFatorialB = document.querySelector('#resultado-fat-B');
-  var FatorialB = calculoFatorialB(numeroA);
+  var FatorialB = calculoFatorialB(numeroB);
   var formatteFatorialB = FatorialB.toFixed(2).replace('.', ',');
   console.log(FatorialB);
   ResultadoFatorialB.textContent = formatteFatorialB;
