@@ -36,6 +36,14 @@ function calculoDiviBA(numeroA, numeroB) {
   return numeroB / numeroA;
 }
 
+function calculoPotAB(numeroA, numeroB) {
+  return Math.pow(numeroA, numeroB);
+}
+
+function calculoPotBA(numeroA, numeroB) {
+  return Math.pow(numeroB, numeroA);
+}
+
 function handleButtonClick() {
   var inputnumeroA = document.querySelector('#input-numero-A');
   var inputnumeroB = document.querySelector('#input-numero-B');
@@ -46,8 +54,8 @@ function handleButtonClick() {
   console.log(numeroA);
   console.log(numeroB);
 
+  calculoPotAB;
   /* ... */
-
   /*resultado-muti  */
   var ResultadoDiviAB = document.querySelector('#resultado-div-AB');
   var diviAB = calculoDiviAB(numeroA, numeroB);
@@ -55,7 +63,14 @@ function handleButtonClick() {
   console.log(diviAB);
   ResultadoDiviAB.textContent = formattediviAB;
 
-  /*resultado-muti  */
+  /*resultado-divi-AB  */
+  var ResultadoDiviAB = document.querySelector('#resultado-div-AB');
+  var diviAB = calculoDiviAB(numeroA, numeroB);
+  var formattediviAB = diviAB.toFixed(2).replace('.', ',');
+  console.log(diviAB);
+  ResultadoDiviAB.textContent = formattediviAB;
+
+  /*resultado-divi-BA  */
   var ResultadoDiviBA = document.querySelector('#resultado-div-BA');
   var diviBA = calculoDiviBA(numeroA, numeroB);
   var formattediviBA = diviBA.toFixed(2).replace('.', ',');
