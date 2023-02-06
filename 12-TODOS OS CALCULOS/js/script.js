@@ -95,14 +95,14 @@ function handleButtonClick() {
   calculoPorBA;
   var ResultadoPorAB = document.querySelector('#resultado-por-AB');
   var PorAB = calculoPorAB(numeroA, numeroB);
-  var formattePorAB = PorAB.toFixed(2).replace('.', ',');
+  var formattePorAB = PorAB.toFixed(0).replace('.', ',');
   console.log(PorAB);
   ResultadoPorAB.textContent = formattePorAB;
 
   calculoPorBA;
   var ResultadoPorBA = document.querySelector('#resultado-por-BA');
   var PorBA = calculoPorBA(numeroA, numeroB);
-  var formattePorBA = PorBA.toFixed(2).replace('.', ',');
+  var formattePorBA = PorBA.toFixed(0).replace('.', ',');
   console.log(PorBA);
   ResultadoPorBA.textContent = formattePorBA;
 
