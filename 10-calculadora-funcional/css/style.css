@@ -5,12 +5,13 @@ body {
 }
 
 .title {
-  color: rgb(233, 30, 30);
+  color: rgb(223, 167, 11);
   text-align: center;
 }
 
 p {
   color: aliceblue;
+  text-align: center;
 }
 
 label {
@@ -29,16 +30,17 @@ input {
 button {
   cursor: pointer;
   background-color: rgb(223, 167, 11);
-  border-color: aliceblue;
+  border-color: rgb(1, 7, 45);
   margin-top: 5px;
 }
 
 table {
-  margin-left: 132px;
+  margin-left: 0px;
   color: aliceblue;
   height: 80px;
-
-  margin-block-end: 50x;
+  align-items: center;
+  margin: auto;
+  margin-block-end: 0x;
 }
 
 th {
@@ -47,12 +49,12 @@ th {
 }
 
 td {
-  color: aliceblue;
+  color: rgb(1, 7, 45);
   text-align: center;
 }
 
 /* Depois dos dois pontos é a pseudoclasse */
 /* tbody tr pra organizar só os tr que estão dentro do tbody */
 tbody tr:nth-child(1n) {
-  background-color: rgb(217, 31, 31);
+  background-color: rgb(223, 167, 11);
 }
