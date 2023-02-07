@@ -151,9 +151,9 @@ function handleButtonClick() {
 
   /*resultado-POT-AB  */
   var ResultadoPotAB = document.querySelector('#resultado-pot-AB');
-  var diviPotAB = calculoPotAB(numeroA, numeroB);
-  var formattePotAB = diviPotAB.toFixed(2).replace('.', ',');
-  console.log(diviPotAB);
+  var PotAB = calculoPotAB(numeroA, numeroB);
+  var formattePotAB = PotAB.toFixed(2).replace('.', ',');
+  console.log(PotAB);
   ResultadoPotAB.textContent = formattePotAB;
 
   /*resultado-divi-AB  */
